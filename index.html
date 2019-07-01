@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" type="text/css" rel="stylesheet" />
+    <meta name="vieuwport" content= "width=device-width, initial-scale=1.0" /> 
+    <title>Gegroet</title>
+
+</head>
+<body>
+  <h1>Welke dag is het vandaag</h1>
+
+<p id="dag"></p>
+
+<p>Bij deze oefening is er gebruik gemaakt van een switch, dit was beter dan een if else functie omdat er meer dan twee voorwaarden zijn waar de functie op moet letten.</p>
+
+<script>
+var dag;
+switch (new Date().getDay()) {
+  case 0:
+    dag = "Zondag";
+    break;
+  case 1:
+    dag = "Maandag";
+    break;
+  case 2:
+    dag = "Dinsdag";
+    break;
+  case 3:
+    dag = "Woensdag";
+    break;
+  case 4:
+    dag = "Donderdag";
+    break;
+  case 5:
+    dag = "Vrijdag";
+    break;
+  case  6:
+    dag = "Zaterdag";
+}
+document.getElementById("dag").innerHTML = "Vandaag is het " + dag + '!';
+</script>
